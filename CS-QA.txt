@@ -45,3 +45,294 @@ A: 4,294,967,296
 
 Q: 2^4
 A: 16
+
+Q:What is the square root of 256?
+A:16
+
+Q:Using bitwise operations, how would you test that a number is a power of 2?
+A:bool isPowerOfTwo = (x & (x - 1);
+
+Q:What does ELF stand for?
+A:Executable and Linkable Format.<br/>It's a common standard file format for executables, object code, shared libraries, and core dumps.
+
+Q:size of char in bits
+A:8 bits
+
+Q:size of char in bytes
+A:1 byte
+
+Q:size of bool in bits
+A:8 bits
+
+Q:size of short in bits
+A:16 bits (at least), and 16 commonly
+
+Q:size of short in bytes
+A:2 bytes, and 2 bytes commonly
+
+Q:size of int in bits
+A:32 bits commonly, at least 16 bits
+
+Q:size of int in bytes
+A:4 bytes commonly, at least 2 bytes
+
+Q:size of long in bits
+A:32 (at least, 32 commonly), 64 on LP64
+
+Q:size of long in bytes
+A:4 bytes, (at least 4, and commonly 4), 8 on LP64
+
+Q:size of long long in bits
+A:64 bits
+
+Q:size of long long in bytes
+A:8 bytes
+
+Q:size of float in bits
+A:32 bits
+
+Q:size of float in bytes
+A:4 bytes
+
+Q:size of double in bits
+A:64 bits
+
+Q:size of double in bytes
+A:8 bytes
+
+Q:size of wchar_t in bits
+A:16 bits
+
+Q:size of wchar_t in bytes
+A:2 bytes
+
+Q:How would you swap 2 integers using only bitwise operations?
+A:a ^= b<br/>b ^= a<br/>a ^= b
+
+Q:How would you turn ON the 3rd bit from the end in a bitstring?
+A:x |= (1 << 2)
+
+Q:How would you turn OFF the 3rd bit from the end in a bitstring?
+A:x &= ~(1 << 2);
+
+Q:Sed command to take a file separated by spaces, turn spaces into newlines, and then sort it alphabetically.
+A:sed 's/ /\n/g' words.txt | sort
+
+Q:Print columns 2, 3, and 6 from the date command.
+A:date | awk '{print $2, $3, $6}'
+
+Q:Take a file delimited by : and make it tab-delimited.
+A:cat /etc/passwd | sed 's/:/\t/g'
+
+Q:Output a file with line numbers.
+A:cat -n somefile
+
+Q:What's the maximum unsigned number you can represent with 4 bits?
+A:15
+
+Q:What's the maximum unsigned number you can represent with 8 bits?
+A:255
+
+Q:What's the maximum unsigned number you can represent with 16 bits?
+A:65,535
+
+Q:What's the maximum unsigned number you can represent with 6 bits?
+A:63
+
+Q:What's the maximum unsigned number you can represent with 15 bits?
+A:32,767
+
+Q:What's the maximum signed number you can represent with 4 bits?
+A:7
+
+Q:What's the maximum unsigned number you can represent with 9 bits?
+A:511
+
+Q:What's the maximum signed number you can represent with 16 bits?
+A:32,767
+
+Q:What's the maximum signed number you can represent with 8 bits?
+A:127
+
+Q:What's the maximum signed number you can represent with 9 bits?
+A:255
+
+Q:What's the maximum unsigned number you can represent with 32 bits?
+A:4.294 Billion(4,294,967,296)
+
+Q:What's the maximum signed number you can represent with 32 bits?
+A:2.147 Billion (4,294,967,296/2=2147483648)
+
+Q:How do you get the logarithm of a number n given a base b?
+A:Keep dividing n by b until you get to a number <= 1.
+
+Q:How can you write log(base b)(ac)?
+A:log(base b)a + log(base b)c
+
+Q:How can you write log(base b)(a/c)?
+A:log(base b)a - log(base b)c
+
+Q:How else can you write log(base b)(a^c)?
+A:c * log(base b)a
+
+Q:How you can express log(base b)a as another base?
+A:log(base d)a / log(base d)b
+
+Q:Why is log(base2)(2^n) == n?
+A:log(base2)(2^n) = n * log(base 2)2 = n * 1 = n
+
+Q:What is the arithmetic series: 1 + 2 + 3 + 4 + ... (n - 1) + n?
+A:(n(n+1)) / 2
+
+Q:What is the value of the geometric (exponential) series when x != 1: 1 + x + x^2 + x^3 + ... x^n ?
+A:(x^(n + 1) - 1) / (x - 1)
+
+Q:What is the sum of this series when it's infinite and x < 1? 1 + x + x^2 + x^3 + ... x^n ?
+A:1 / (1 - x)
+
+Q:What is the sum of the harmonic series for the nth harmonic number: 1 + 1/2 + 1/3 + 1/4 .. + 1/n
+A:No closed form, only good approximations:<br/><br/>≈ 0.57721<br/>the Euler-Mascheroni constant.
+
+Q:What is the maximum unsigned integer you can represent with n bits?
+A:2^n - 1
+
+Q:In Python, initialize a list of lists called x with 100 elements.
+A:x = [[] for _ in range(100)]
+
+Q:What is a Dunder method?
+A:A magic method in Python, such as __getitem__ and __len__.
+
+Q:What is the sum of numbers from 1 to 2^n?
+A:2^(n+1) - 1<br/>The sum of a sequence of powers is roughly equal to the next value in the sequence.
+
+Q:How many ways can you rearrange a string of n unique characters?
+A:n!<br/>Permutations.
+
+Q:How many ways can you arrange k characters from n unique characters?
+A:n! / (n - k)!<br/>Permutation of n elements of size k.
+
+Q:How many subsets (ordering doesn't matter) of size k are there in n unique characters?
+A:n! / k!(n - k)!<br/>This is n choose k.
+
+Q:What should you avoid in your base case in recursion?
+A:Too many base case scenarios. Just have one base case so you can return as quickly as possible. Avoid "arm's length" recursion.
+
+Q:What does __getitem__ in a class allow us to use?
+A:- iteration<br/>- slicing<br/>- reverse iteration<br/>- random.choice
+
+Q:How many subsets are there in n items?
+A:2^n
+
+Q:Python: Default arguments are okay to use with the following caveat.
+A:Do not use mutable objects as default values in the function or method definition.<br/><br/>Lists are not ok.
+
+Q:Python: When does a Python multi-threaded program terminate?
+A:The entire Python program exits when no alive non-daemon threads are left.
+
+Q:Python: In Python, if a thread is set to daemon, what happens when the thread sleeps?
+A:If the Python program reaches its end, the thread will be killed even if it's sleeping.
+
+Q:Python: If a thread is a daemon, what happens when you do a join()?
+A:The main thread will wait for it.
+
+Q:Python: Give an example of a conditional expression.
+A:x = 1 if cond else 2
+
+Q:Python: break this string 'a/b/c' into a list of ['a', 'b', c']
+A:'a/b/c'.split('/')
+
+Q:Python: split a word or sentences into characters.
+A:list('some words')
+
+Q:Python: How would you remove indices 6 to 11 in a list foo?
+A:del foo[6:12]
+
+Q:Python: How can you tell if an index is in a list?
+A:if 0 < i < len(foo):
+
+Q:Python: What's the difference between foo.sort() and sorted(foo) where foo is a list?
+A:foo.sort() changes the list to its sorted state<br/>sorted(foo) doesn't change foo, just returns a sorted list.
+
+Q:Python: Can you sort a tuple?
+A:Yes, using sorted(foo)<br/>but not with foo.sort()
+
+Q:Python: How can you create an instance of the class you're in?
+A:thing = type(self)()
+
+Q:Python: How can you sort a sequence of strings by their length?
+A:foo.sort(key=len)<br/>or<br/>sorted(foo, key=len)
+
+Q:Python: What is the GIL?
+A:It's the Global Interpreter Lock. It's is a part of CPython. It ensures only one thread runs in the interpreter at once. Having the GIL simplifies many low-level details (memory management, callouts to C extensions, etc.)
+
+Q:Python: When is the GIL released?
+A:During I/O (disk IO, network IO, output to display) including when a thread uses sleep.
+
+Q:Python: What is a "tick" in CPython?
+A:Approximately 1 machine instruction.
+
+Q:Python: What happens every 100 "ticks" in the CPython interpreter?
+A:A thread check occurs during which the thread releases the GIL then attempts to reacquire it. Other Python threads will contend for the the GIL. This is no longer the case in 3.4.
+
+Q:Python: What is a lock in CPython?
+A:It's a binary semaphore. It's not a mutex lock.
+
+Q:What is internal memory?
+A:Main memory or core memory.
+
+Q:What is external memory?
+A:Usually consists of disks, CD drives, DVD drives, and/or tapes.
+
+Q:What is a common adage among computer architects?
+A:A program spends 90 percent of its time in 10 percent of its code.
+
+Q:For Gzip in web servers, what is the usual compression setting?
+A:6
+
+Q:What is the min and max compression settings in command line gzip?
+A:0-9
+
+Q:What is a process?
+A:An instance of an executing program consisting of <br/>an address space and one or more threads of control. <br/>It has restricted rights. <br/>It owns a region of memory. </br>It owns file descriptors, file system context. <br/>It encapsulates one or more threads sharing the process' resources. <br/>It is isolated from other processes.
+
+Q:What is a context switch?
+A:The copying out and in of register state to switch from running one process to running another.
+
+Q:What is the scheduler?
+A:The scheduler manages the priorities of user and OS processes.
+
+Q:What causes operating systems to crash most of the time?
+A:Device drivers. They are in the kernel and very low level. They have access to all the hardware, including memory. They are written by authors outside of the operating system.
+
+Q:What is a shell?
+A:A job control program. It allows a programmer to create and manage a set of programs to do some task.
+
+Q:What is a microsecond? Also known as μs
+A:1 millionth of a second.
+
+Q:What is a nanosecond?
+A:1 billionth of a second. ns
+
+Q:What is a picosecond?
+A:A trillionth of a second.
+
+Q:What is the port for DNS?
+A:53
+
+Q:What is the port for telnet?
+A:23
+
+Q:What is the port for ssh?
+A:22
+
+Q:What is the port range for clients?
+A:8000-65535
+
+Q:What is the word size on Intel?
+A:16 bits
+
+Q:What is the double-word size on Intel?
+A:32 bits
+
+Q:What is Big Endianness?
+A:The most significant bytes of a word or larger are stored in the lowest address.
