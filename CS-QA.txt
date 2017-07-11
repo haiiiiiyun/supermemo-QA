@@ -40,11 +40,56 @@ A: 32768
 Q: 2^16
 A: 65536
 
+Q: 2^17
+A: 131072
+
+Q: 2^18
+A: 262144
+
+Q: 2^19
+A: 524288
+
+Q: 2^20
+A: 1048576
+
+Q: 2^21
+A: 2097152
+
+Q: 2^22
+A: 4194304
+
+Q: 2^23
+A: 8388608
+
+Q: 2^24
+A: 16777216
+
+Q: 2^25
+A: 33554432
+
+Q: 2^26
+A: 67108864
+
+Q: 2^27
+A: 134217728
+
+Q: 2^28
+A: 268435456
+
+Q: 2^29
+A: 536870912
+
+Q: 2^30
+A: 1073741824
+
+Q: 2^31
+A: 2147483648
+
 Q: 2^32
 A: 4,294,967,296
 
-Q: 2^4
-A: 16
+Q: 123456 Ê®Áù½øÖÆ
+A: 0x3039
 
 Q:What is the square root of 256?
 A:16
@@ -126,42 +171,6 @@ A:cat /etc/passwd | sed 's/:/\t/g'
 
 Q:Output a file with line numbers.
 A:cat -n somefile
-
-Q:What's the maximum unsigned number you can represent with 4 bits?
-A:15
-
-Q:What's the maximum unsigned number you can represent with 8 bits?
-A:255
-
-Q:What's the maximum unsigned number you can represent with 16 bits?
-A:65,535
-
-Q:What's the maximum unsigned number you can represent with 6 bits?
-A:63
-
-Q:What's the maximum unsigned number you can represent with 15 bits?
-A:32,767
-
-Q:What's the maximum signed number you can represent with 4 bits?
-A:7
-
-Q:What's the maximum unsigned number you can represent with 9 bits?
-A:511
-
-Q:What's the maximum signed number you can represent with 16 bits?
-A:32,767
-
-Q:What's the maximum signed number you can represent with 8 bits?
-A:127
-
-Q:What's the maximum signed number you can represent with 9 bits?
-A:255
-
-Q:What's the maximum unsigned number you can represent with 32 bits?
-A:4.294 Billion(4,294,967,296)
-
-Q:What's the maximum signed number you can represent with 32 bits?
-A:2.147 Billion (4,294,967,296/2=2147483648)
 
 Q:How do you get the logarithm of a number n given a base b?
 A:Keep dividing n by b until you get to a number <= 1.
